@@ -1,0 +1,8 @@
+com\freecrm\qa\test\Contactfullsearchtest.class
+com\freecrm\qa\test\Homepagetest.class
+com\freecrm\qa\test\Loginpagetest.class
+com\freecrm\qa\test\Newcompanytest.class
+com\freecrm\qa\test\Companyandcombinedformtest.class
+com\freecrm\qa\test\Contactandcombinedformtest.class
+com\freecrm\qa\test\Companytest.class
+com\freecrm\qa\test\Contactpagetest.class
