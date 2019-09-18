@@ -10,11 +10,13 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.sl.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import com.freecrm.qa.base.Testbase;
 //import com.utility.Xls_Reader
@@ -67,6 +69,25 @@ public class Testutil extends Testbase {
 		String currentDir = System.getProperty("user.dir");
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 	}
+	
+	public static void Sendkeysmethod(String locator,String value)
+	{
+		driver.findElement(By.xpath(locator)).sendKeys(value);;
+	}
+	public static void clickmethod(String locator)
+	{
+		driver.findElement(By.xpath(locator)).click();
+	}
+	public static void dropdownmethod(String locator,String value)
+	{
+		Select s=new Select(driver.findElement(By.xpath(locator)));
+		s.selectByVisibleText(value);
+		
+	}
+	{
+		
+	}
+	
 
 	public static void runTimeInfo(String messageType, String message) throws InterruptedException {
 		js = (JavascriptExecutor) driver;
