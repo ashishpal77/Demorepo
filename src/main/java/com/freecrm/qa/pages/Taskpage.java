@@ -34,8 +34,13 @@ public class Taskpage extends Testbase {
 	
 	public Taskpage()
 	{
-		
+	   	
 		PageFactory.initElements(driver, this);
+	}
+	
+	public void save()
+	{
+		
 	}
 	
 	

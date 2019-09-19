@@ -82,9 +82,15 @@ public class Testutil extends Testbase {
 	{
 		Select s=new Select(driver.findElement(By.xpath(locator)));
 		s.selectByVisibleText(value);
+<<<<<<< HEAD
 		//s.selectByValue(value);
+=======
+		s.selectByValue(value);
+>>>>>>> 4d2036193f6708a5c21e4f11bec4eb7ec11e76d1
 		
 	}
+	
+	
 	{
 		
 	}
